@@ -1,0 +1,40 @@
+﻿/* css code written by Dries */
+
+
+/* make logo smaller */
+img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.container-fluid {
+    background-color: #B2D3FE;
+    
+
+
+}
+
+span {
+    color: #FFFFFF;
+}
+
+
+
+.nameCreator {
+   /* position: absolute;
+    right: 0;
+    margin-right: 10px;*/
+
+    
+}
+.followMe {
+   
+}
+.madeWith, i {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
