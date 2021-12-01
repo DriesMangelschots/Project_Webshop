@@ -15,7 +15,7 @@ namespace Project_Webshop.Models
         public string Password { get; set; }
 
         // salt search how this works
-        // public string DeliveryAddress { get; set; }
+        public string DeliveryAddress { get; set; }
         public Newsletter Newsletter;
         public ICollection<Order>Orders { get; set; }
 
