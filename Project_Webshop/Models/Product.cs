@@ -13,7 +13,7 @@ namespace Project_Webshop.Models
         public decimal Price { get; set; }
         public decimal Quantity { get; set; }
         public bool Discount { get; set; }
-
+        public bool Favorite { get; set; }
         Orderline Orderline { get; set; }
 
     }
