@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Project_Webshop.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,9 @@ namespace Project_Webshop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            // add context with DI + using sql server 
+            services.AddDbContext<ProjectWebshopContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("LocalDBConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
