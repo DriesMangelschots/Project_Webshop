@@ -16,5 +16,7 @@ namespace Project_Webshop.Models
         public bool Favorite { get; set; }
         Orderline Orderline { get; set; }
 
+        public virtual ICollection<Orderline> Orderlines { get; set; }
+
     }
 }

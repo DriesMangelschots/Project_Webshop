@@ -10,5 +10,9 @@ namespace Project_Webshop.Models
         public int OrderID { get; set; }
         public int CustomerID { get; set; }
         public Customer customer { get; set; }
+
+        public virtual ICollection<Orderline> Orderlines { get; set; }
+
+
     }
 }
