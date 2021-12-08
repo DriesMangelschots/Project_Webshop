@@ -7,6 +7,6 @@ namespace Project_Webshop.Controllers
 {
     public class CustomerController
     {
-
+        // text controller
     }
 }
