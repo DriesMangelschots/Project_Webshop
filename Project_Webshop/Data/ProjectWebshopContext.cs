@@ -24,19 +24,21 @@ namespace Project_Webshop.Data
             //database
             protected override void OnModelCreating(ModelBuilder modelBuilder)
             {
-                modelBuilder.Entity<Customer>().ToTable("Customer");
-                modelBuilder.Entity<Customer>().ToTable("Order");
-                modelBuilder.Entity<Customer>().ToTable("Orderline");
-                modelBuilder.Entity<Customer>().ToTable("Product");
-                modelBuilder.Entity<Customer>().ToTable("Newsletter");
+                base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Customer>().ToTable("Customer");
+            modelBuilder.Entity<Order>().ToTable("Order");
+            modelBuilder.Entity<Orderline>().ToTable("Orderline");
+            modelBuilder.Entity<Product>().ToTable("Product");
+            modelBuilder.Entity<Newsletter>().ToTable("Newsletter");
 
 
 
 
 
-            }
+        }
 
 
-        
+
     }
 }

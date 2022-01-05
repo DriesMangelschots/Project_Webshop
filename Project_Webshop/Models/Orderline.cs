@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -11,8 +12,10 @@ namespace Project_Webshop.Models
         public int OrderId { get; set; }
         public int ProductId { get; set; }
 
-        public decimal Price { get; set; }
-        public decimal Amount  { get; set; }
+        [Column(TypeName = "decimal(18,4)")]
+        public Decimal Price { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public Decimal Amount  { get; set; }
 
   
 
