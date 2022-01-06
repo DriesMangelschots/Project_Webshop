@@ -1,11 +1,21 @@
-﻿body {
+﻿/* Home css*/
 
-
-
-}
 .logo {
     border-radius: 50%;
     width: 55px;
     height: 55px;
 }
+span {
+    color: #ffffff;
+}
+span .fa-heart {
+    color: #FF0955;
+}
+.footer-right {
+    float: right;
+}
+.color-footer {
+    background-color: #B1D4FF;
+}
+/* Product css*/
 

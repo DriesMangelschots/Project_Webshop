@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "~/Views/Shared/_WebshopLayout.cshtml";
+    ViewData["Title"] = "Product";
+}
+
+
+
+<div class="container text-center">
+    <p>Welcome to the Merch!</p>
+
+    <div class="row">
+        <div class="card col card-deck" style="width: 18rem;">
+            <img src="./images/Sweaters/Sweater_RoyalBlue_Front.png" class="card-img-top" alt="Sweater">
+            <div class="card-body">
+                <p class="card-text"><a asp-controller="Product" asp-action="Sweater">Check our cool Sweaters</a></p>
+            </div>
+        </div>
+        <div class="card col card-deck" style="width: 18rem;">
+            <img src="./images/T-shirts/Tshirt_Slate(Red)_Front.png" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+                <p class="card-text"><a asp-controller="Product" asp-action="Tshirt">A T-shirt with your favorite wolfie</a></p>
+            </div>
+        </div>
+
+        <div class="card col card-deck" style="width: 18rem;">
+            <img src="./images/Cups/Cup_Coffee.png" class="card-img-top" alt="T-shirt">
+            <div class="card-body">
+                <p class="card-text"><a asp-controller="Product" asp-action="Mug">For all our coffee lovers Choose your mug!</a></p>
+            </div>
+        </div>
+    </div>
+</div>

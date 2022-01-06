@@ -12,5 +12,17 @@ namespace Project_Webshop.Controllers
         {
             return View();
         }
+        public IActionResult Tshirt()
+        {
+            return View();
+        }
+        public IActionResult Mug()
+        {
+            return View();
+        }
+        public IActionResult Sweater()
+        {
+            return View();
+        }
     }
 }
