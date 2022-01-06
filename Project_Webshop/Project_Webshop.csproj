@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\images\" />
     <Folder Include="Viewmodel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\logo_png.png" />
   </ItemGroup>
 
   <ItemGroup>

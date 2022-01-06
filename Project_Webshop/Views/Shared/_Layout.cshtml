@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Project_Webshop</title>
+    <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
@@ -12,27 +13,32 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-light navbar-expand-md bg-light justify-content-md-center justify-content-start">
-            <a class="navbar-brand d-md-none d-inline" href="">Brand</a>
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img class="logo" src="~/images/logo_png.png" alt="Logo" />
+            </a>
             <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="nav-link" href="#_">Brand</a>
+            
             <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
                 <ul class="navbar-nav mx-auto text-md-center text-left">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline"  asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item my-auto">
-                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline" href="">Brand</a>
+                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline" asp-area="" asp-controller="Home" asp-action="Product">Product</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline" asp-area="" asp-controller="Home" asp-action="Discount">Discount</a>
+
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline" asp-area="" asp-controller="Home" asp-action="Faq">FAQ</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand mx-0 d-none d-md-inline" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+
                     </li>
                 </ul>
                 <ul class="nav navbar-nav flex-row justify-content-md-center justify-content-start flex-nowrap">
@@ -42,7 +48,7 @@
                 </ul>
             </div>
         </nav>
-
+        
     </header>
     <div class="container">
         <main role="main" class="pb-3">
