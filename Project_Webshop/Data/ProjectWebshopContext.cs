@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Project_Webshop.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Project_Webshop.Data
 {
-    public class ProjectWebshopContext: DbContext
+    public class ProjectWebshopContext: IdentityDbContext<IdentityUser>
     {
     
             public ProjectWebshopContext(DbContextOptions<ProjectWebshopContext> options)
