@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Project_Webshop.Viewmodel.ProductListViewModel
+@{
     Layout = "~/Views/Shared/_WebshopLayout.cshtml";
     ViewData["Title"] = "T-shirts";
 }
@@ -6,41 +7,51 @@
 
 <div class="text-center container row">
 
+
+
+
     <div class="card col-3" style="width: 18rem;">
-        <img src="~/images/T-shirts/Tshirt_Black_Front.png" class="card-img-top" alt="tshirts">
-        <div class="card-body">
-            <h2>Black T-shirt</h2>
-            <p class="card-text">25 € </p>
-        </div>
+
+
+            <img src="~/images/T-shirts/Tshirt_Black_Front.png" class="card-img-top" alt="tshirts">
+            <h2> Black T-shirt</h2>
+            @*@Html.DropDownList(product.Size)*@
+            <p class="card-text">25 €</p>
+            <button class="btn btn-success">Buy</button>
+       
     </div>
     <div class="card col-3" style="width: 18rem;">
         <img src="~/images//T-shirts/Tshirt_Lemon_Front.png" class="card-img-top" alt="tshirts">
-        <div class="card-body">
-            <h2>Lemon T-shirt</h2>
-            <p class="card-text">25 € </p>
-        </div>
+
+        <h2>Lemon T-shirt</h2>
+        <p class="card-text">25 € </p>
+        <button class="btn btn-success">Buy</button>
+
     </div>
     <div class="card col-3" style="width: 18rem;">
         <img src="~/images/T-shirts/Tshirt_Purple_Front.png" class="card-img-top" alt="tshirts">
-        <div class="card-body">
-            <h2>Purple T-shirt</h2>
-            <p class="card-text">25 € </p>
-        </div>
+
+        <h2>Purple T-shirt</h2>
+        <p class="card-text">25 € </p>
+        <button class="btn btn-success">Buy</button>
+
     </div>
 
     <div class="card col-3" style="width: 18rem;">
         <img src="~/images/T-shirts/Tshirt_RoyalBlue_Front.png" class="card-img-top" alt="tshirts">
-        <div class="card-body">
-            <h2>Royal Blue T-shirt</h2>
-            <p class="card-text">25 € </p>
-        </div>
+        <h2>Blue T-shirt</h2>
+        <p class="card-text">25 € </p>
+        <button class="btn btn-success">Buy</button>
+
+
     </div>
     <div class="card col-3" style="width: 18rem;">
         <img src="~/images/T-shirts/Tshirt_Slate(Red)_Front.png" class="card-img-top" alt="tshirts">
-        <div class="card-body">
-            <h2>Royal Blue T-shirt</h2>
+     
+            <h2>Red T-shirt</h2>
             <p class="card-text">25 € </p>
-        </div>
-    </div>
+            <button class="btn btn-success">Buy</button>
+       
 
+    </div>
 </div>
